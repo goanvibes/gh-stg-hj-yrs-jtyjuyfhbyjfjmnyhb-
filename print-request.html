@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<title>Print Request — Classic Business Centre Goa</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Classic Business Centre Goa — digital printing, designing, xerox, scanning, binding, lamination, flex, vinyl and offset printing.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="site-data.js" defer></script>
+<script src="main.js" defer></script>
+</head>
+<body data-page="print">
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Classic Business Centre home">
+      <img src="logo.png" alt="Classic Business Centre logo">
+      <span><b>Classic Business Centre</b><small>Goa · Serving since 30 years</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="print-request.html">Print Request</a>
+      <a href="branches.html">Branches</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle colour mode">◐</button>
+      <a class="cta cta-small" href="print-request.html">PRINT NOW</a>
+      <button class="menu-toggle" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero request-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <span class="kicker">WhatsApp print request</span>
+        <h1>Build the request. Open WhatsApp. Send the file.</h1>
+        <p>Select the service, paper, size, quantity, branch and deadline. The final message opens directly in WhatsApp.</p>
+      </div>
+      <div class="page-logo-card"><img src="logo.png" alt="Classic Business Centre logo"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container request-layout">
+      <aside class="request-steps print-sheet">
+        <div class="progress"><i id="progressBar"></i></div>
+        <button class="step-btn active" data-step="0"><span>1</span>Service</button>
+        <button class="step-btn" data-step="1"><span>2</span>Paper</button>
+        <button class="step-btn" data-step="2"><span>3</span>Details</button>
+        <button class="step-btn" data-step="3"><span>4</span>WhatsApp</button>
+      </aside>
+
+      <div class="request-panel print-sheet">
+        <section class="form-step active">
+          <span class="eyebrow">Step 1</span><h2>What do you need?</h2>
+          <div class="option-grid" id="serviceOptions"></div>
+          <div class="form-nav"><button class="cta next-step">Next</button></div>
+        </section>
+        <section class="form-step">
+          <span class="eyebrow">Step 2</span><h2>Choose paper or media.</h2>
+          <div class="option-grid media-options" id="mediaOptions"></div>
+          <div class="form-nav"><button class="ghost prev-step">Back</button><button class="cta next-step">Next</button></div>
+        </section>
+        <section class="form-step">
+          <span class="eyebrow">Step 3</span><h2>Job details.</h2>
+          <div class="field-grid">
+            <label>Size<input class="input" data-req="size" placeholder="A4, A3, A0, 12 × 18, custom"></label>
+            <label>Quantity<input class="input" data-req="qty" placeholder="Example: 50 copies"></label>
+            <label>Finishing<input class="input" data-req="finish" placeholder="Lamination, spiral, wiro, cutting"></label>
+            <label>Preferred branch<select class="input" data-req="branch"><option value="">Choose branch</option><option>Panjim · EDC Patto Plaza</option><option>Panjim Branch 2</option><option>Porvorim</option><option>Mapusa</option><option>Margao · Abade Faria Road</option></select></label>
+            <label>Deadline<input class="input" data-req="deadline" placeholder="Today, tomorrow, date"></label>
+            <label>Your name<input class="input" data-req="name" placeholder="Name"></label>
+          </div>
+          <label class="full-label">Notes<textarea class="input" data-req="note" rows="4" placeholder="Colour/B&W, single-side/two-side, cutting, delivery or pickup details"></textarea></label>
+          <div class="form-nav"><button class="ghost prev-step">Back</button><button class="cta next-step">Review</button></div>
+        </section>
+        <section class="form-step">
+          <span class="eyebrow">Step 4</span><h2>Review request.</h2>
+          <div class="summary-box" id="requestSummary"></div>
+          <div class="quiet-note">After WhatsApp opens, attach your PDF, image, design file or document in the chat.</div>
+          <div class="form-nav"><button class="ghost prev-step">Back</button><button class="cta" id="waBtn">PRINT NOW ON WHATSAPP</button></div>
+        </section>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer-grid container">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Classic Business Centre logo">
+      <p>Digital printing, graphic designing, jumbo printing, flex, vinyl, binding, offset printing, xerox, scanning and lamination across Goa.</p>
+      <a class="cta" href="print-request.html">PRINT NOW</a>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <a href="services.html">Services</a>
+      <a href="print-request.html">Print Request</a>
+      <a href="branches.html">Branches</a>
+      <a href="services.html#paper-catalogue">Paper Catalogue</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:+919422062887">+91 94220 62887</a>
+      <a href="https://wa.me/919422062887" target="_blank" rel="noopener">WhatsApp CBC</a>
+      <a href="https://www.google.com/maps/search/Classic+Business+Centre+Goa" target="_blank" rel="noopener">Find a branch</a>
+    </div>
+  </div>
+</footer>
+<div class="mobile-print-bar"><a class="cta" href="print-request.html">PRINT NOW</a></div>
+</body>
+</html>

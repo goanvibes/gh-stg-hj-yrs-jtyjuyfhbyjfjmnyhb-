@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<title>Services & Paper Catalogue — Classic Business Centre Goa</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Classic Business Centre Goa — digital printing, designing, xerox, scanning, binding, lamination, flex, vinyl and offset printing.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="site-data.js" defer></script>
+<script src="main.js" defer></script>
+</head>
+<body data-page="services">
+<header class="site-header" id="siteHeader">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html" aria-label="Classic Business Centre home">
+      <img src="logo.png" alt="Classic Business Centre logo">
+      <span><b>Classic Business Centre</b><small>Goa · Serving since 30 years</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="print-request.html">Print Request</a>
+      <a href="branches.html">Branches</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle colour mode">◐</button>
+      <a class="cta cta-small" href="print-request.html">PRINT NOW</a>
+      <button class="menu-toggle" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div>
+        <span class="kicker">Service catalogue</span>
+        <h1>Print, design, finish and deliver-ready work.</h1>
+        <p>Choose from CBC’s main service categories, then match the job with the right paper, GSM, media and size.</p>
+        <div class="hero-actions"><a class="cta cta-xl" href="print-request.html">PRINT NOW</a><a class="ghost" href="#paper-catalogue">Paper prices</a></div>
+      </div>
+      <div class="page-logo-card"><img src="logo.png" alt="Classic Business Centre logo"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head"><div><span class="eyebrow">CBC Services</span><h2>The complete print counter.</h2></div><p>Nine direct service groups for quick browsing.</p></div>
+    <div class="container print-sheet"><div id="servicesGrid" class="service-grid"></div></div>
+  </section>
+
+  <section class="section" id="paper-catalogue">
+    <div class="container section-head"><div><span class="eyebrow">Paper & Media</span><h2>GSM, size and rate guide.</h2></div><p>Search by name, finish, GSM, sticker, metallic, vinyl or flex.</p></div>
+    <div class="container print-sheet">
+      <div class="catalog-toolbar"><input id="mediaSearch" class="input search" placeholder="Search paper, sticker, vinyl, flex, metallic..."><select id="mediaFilter" class="input"></select></div>
+      <div class="table-wrap"><table class="media-table"><thead><tr><th>Material</th><th>GSM</th><th>Size</th><th>Category</th><th>Rate</th></tr></thead><tbody id="mediaBody"></tbody></table></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container section-head"><div><span class="eyebrow">Size guide</span><h2>Common paper sizes.</h2></div><p>A quick reference for documents, posters, CAD plans and custom roll media.</p></div>
+    <div class="container print-sheet"><div id="sizeGrid" class="size-grid"></div></div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer-grid container">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Classic Business Centre logo">
+      <p>Digital printing, graphic designing, jumbo printing, flex, vinyl, binding, offset printing, xerox, scanning and lamination across Goa.</p>
+      <a class="cta" href="print-request.html">PRINT NOW</a>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <a href="services.html">Services</a>
+      <a href="print-request.html">Print Request</a>
+      <a href="branches.html">Branches</a>
+      <a href="services.html#paper-catalogue">Paper Catalogue</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="tel:+919422062887">+91 94220 62887</a>
+      <a href="https://wa.me/919422062887" target="_blank" rel="noopener">WhatsApp CBC</a>
+      <a href="https://www.google.com/maps/search/Classic+Business+Centre+Goa" target="_blank" rel="noopener">Find a branch</a>
+    </div>
+  </div>
+</footer>
+<div class="mobile-print-bar"><a class="cta" href="print-request.html">PRINT NOW</a></div>
+</body>
+</html>
